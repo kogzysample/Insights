@@ -1,109 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kogzy MDGS - Blog</title>
     <style>
         body {
-            font-family: Helvetica, Arial, sans-serif;
-            background-color: #000000;
-            color: #f4f4f9;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #000000;
-            border-radius: 10px;
-        }
-        h1, h2, p {
-            margin: 10px 0;
-        }
-        .blog-post {
-            margin-bottom: 40px;
-        }
-        .blog-post img {
-            display: block;
-            margin: 0 auto 10px;
-            max-width: 100%;
-            height: auto;
-        }
-        .blog-post h2 {
-            margin: 20px 0 10px;
-        }
-        .blog-post p {
-            margin: 10px 0;
-            line-height: 1.6;
-        }
-        .contact-form {
-            margin-top: 40px;
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
             text-align: center;
         }
-        input[type="email"] {
-            width: 100%;
+
+        nav {
+            background-color: #242424;
             padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
         }
-        input[type="submit"] {
-            background-color: #f4f4f9;
-            color: #102542;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .back-link {
-            margin-top: 20px;
-            display: block;
-            text-align: center;
-            color: #f4f4f9;
+
+        nav a {
+            color: #fff;
             text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+            display: inline-block;
         }
-        .back-link:hover {
-            text-decoration: underline;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        article p {
+            text-align: justify;
+        }
+
+        main {
+            flex: 2;
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 1px solid rgb(145, 145, 145);
+            margin-right: 10px;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #c9c9c9;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #242424;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
+    <title>Blogging Website Layout</title>
 </head>
+
 <body>
+    <header>
+        <h1>Kogzy MDGS</h1>
+    </header>
+
+    <nav>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+        <a href="#">Home</a>
+    </nav>
+
     <div class="container">
-        <h1>Blog</h1>
-        
-        <div class="blog-post">
-            <img src="path/to/your/image.jpg" alt="Blog Post Image">
-            <h2>Blog Post Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        <main>
+            <article>
+                <h2>HTML</h2>
+                <p class="post-meta">
+                    Published on December 11, 2023 by GeeksforGeeks
+                </p>
+                <p>
+                    HTML stands for HyperText Markup Language. It is used to design the web pages. With the help of HTML,
+                    you can create a complete website structure. HTML is the combination of Hypertext and Markup
+                    language. Hypertext defines the link between the web pages and markup language defines the text
+                    document within the tag that define the structure of web pages.
+                </p>
+            </article>
 
-        <div class="blog-post">
-            <img src="path/to/your/image.jpg" alt="Blog Post Image">
-            <h2>Another Blog Post Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            <article>
+                <h2>CSS</h2>
+                <p class="post-meta">
+                    Published on December 10, 2023 by GeeksforGeeks
+                </p>
+                <p>
+                    CSS (Cascading Style Sheets) is used to styles web pages. Cascading Style Sheets are fondly referred
+                    to as CSS. The reason for using this is to simplify the process of making web pages presentable. It
+                    allows you to apply styles on web pages. More importantly, it enables you to do this independently
+                    of the HTML that makes up each web page.
+                </p>
+            </article>
 
-        <div class="blog-post">
-            <img src="path/to/your/image.jpg" alt="Blog Post Image">
-            <h2>Yet Another Blog Post Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+            <article>
+                <h2>JavaScript</h2>
+                <p class="post-meta">
+                    Published on December 09, 2023 by GeeksforGeeks
+                </p>
+                <p>
+                    JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It can
+                    be used for both Client-side as well as Server-side developments. JavaScript also known as a
+                    scripting language for web pages. This JavaScript Tutorial is designed to help both beginners and
+                    experienced professionals master the fundamentals of JavaScript and unleash their creativity to
+                    build powerful web applications. From basic syntax and data types to advanced topics such as
+                    object-oriented programming and DOM manipulation.
+                </p>
+            </article>
 
-        <div class="contact-form">
-            <h2>Get in Touch</h2>
-            <form action="https://example.com/submit" method="post">
-                <input type="email" name="email" placeholder="Your Email" required>
-                <br>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+            <article>
+                <h2>ReactJS</h2>
+                <p class="post-meta">
+                    Published on December 08, 2023 by GeeksforGeeks
+                </p>
+                <p>
+                    ReactJS is a declarative, efficient, and flexible JavaScript library for building user interfaces.
+                    It is an open-source, component-based front-end library that is responsible only for the view layer
+                    of the application. ReactJS is not a framework, it is just a library developed by Facebook to solve
+                    some problems that we were facing earlier.
+                </p>
+            </article>
+        </main>
 
-        <a class="back-link" href="http://kogzy.com/">Back to Home</a>
+        <aside>
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">ReactJS</a></li>
+            </ul>
+        </aside>
     </div>
+
+    <footer>
+        <p>Kogzy MDGS. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
